@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/activity_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--Tutorial button-->
+    <Button
+        android:id="@+id/tutorial_button"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/question_mark"
+        android:layout_alignParentRight="true"
+        android:text="사용법"
+        android:textColor="#00ff0000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/objects"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button1"
+            android:text="사물"
+            android:textColor="#00ff0000"/>
+
+        <Button
+            android:id="@+id/banknotes"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button2"
+            android:text="지폐"
+            android:textColor="#00ff0000"/>
+
+        <Button
+            android:id="@+id/detection"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button3"
+            android:text="탐지"
+            android:textColor="#00ff0000"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
